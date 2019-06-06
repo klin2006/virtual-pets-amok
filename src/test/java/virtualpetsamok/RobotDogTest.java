@@ -15,9 +15,9 @@ public class RobotDogTest {
 	}
 	
 	@Test
-	public void walkDogShouldReturn100HappinessLevel() {
+	public void walkDogShouldReturn30HappinessLevel() {
 		underTest.walkDog();
 		int happyAfter = underTest.getHappinessLevel();
-		assertEquals(happyAfter, 100);
+		assertEquals(happyAfter, 30);
 		}
 }

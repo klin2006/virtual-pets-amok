@@ -1,7 +1,8 @@
 package virtualpetsamok;
 
 public class VirtualPet {
-
+	private int happyPlay = 30;
+	private int healthPlay = 15;
 	protected String petName;
 	protected String petType;
 	protected int happinessLevel;
@@ -31,8 +32,20 @@ public class VirtualPet {
 		return healthLevel;
 	}
 
-	public int playWithEachPet() {
-		return happinessLevel = 100;
+	public void playWithEachPet() {
+		if (getHappinessLevel() + happyPlay < 100) {
+			happinessLevel += happyPlay;
+		} else {
+			happinessLevel = 100;
+		}
+
+		if (getHealthLevel() + healthPlay < 100){
+			healthLevel += healthPlay;
+		} else {
+			healthLevel = 100;
+		}
+		
+		
 	}
 
 }

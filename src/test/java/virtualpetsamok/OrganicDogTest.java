@@ -73,4 +73,14 @@ public class OrganicDogTest {
 		assertEquals(wasteAfter, 0);
 	}
 	
+	@Test
+	public void walkDogShouldReturn45HappinessAnd60Health() {
+		underTest.walkDog();
+		int happyAfter = underTest.getHappinessLevel();
+		int healthAfter = underTest.getHealthLevel();
+		assertEquals(happyAfter, 45);
+		assertEquals(healthAfter, 60);
+	}
+	
+	
 }
